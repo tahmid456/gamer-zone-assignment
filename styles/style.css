@@ -319,3 +319,124 @@ margin-top: 45px;
     text-align: center;
     opacity:0.7;
 }
+
+.video-icon{
+
+position: relative;
+bottom: 100px;
+
+}
+
+@media screen and (min-width:425px) and (max-width:767px) {
+
+.nav-content,nav, .banner {
+
+
+    flex-direction: column;
+}
+
+.nav-menu{
+display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+
+.banner-img {
+
+    width:100%;
+}
+
+.games-photo{
+
+flex-direction: column;
+
+}
+.rect-6{
+
+    margin-right: 22px;
+}
+
+.playing-container{
+
+    flex-direction: column;
+
+}
+.rect-66{
+
+
+    position: relative;
+    left:200px;
+}
+.games-name-container,.name-five, .name-four, .footer-logo, .footer-item{
+
+    flex-direction: column;
+    
+}
+
+
+
+}
+
+
+@media screen and (min-width:768px) and (max-width:1023px){
+
+    .nav-content,nav, .banner {
+
+
+        flex-direction: column;
+    }
+    
+    .nav-menu{
+    display: flex;
+        flex-direction: column;
+        gap:15px;
+    }
+    
+    .banner-img {
+    
+        width:100%;
+    }
+    
+    .games-photo{
+    
+    flex-direction: column;
+    
+    }
+    .rect-6{
+    
+        margin-right: 22px;
+    }
+    
+    .playing-container{
+    
+        flex-direction: column;
+    
+    }
+    .rect-66{
+    
+    
+        position: relative;
+        left:200px;
+    }
+    .games-name-container,.name-five, .name-four, .footer-logo, .footer-item{
+    
+        flex-direction: column;
+        
+    }
+    .playing-container{
+
+        text-align: center;
+    }
+    .banner-img{
+
+margin-top:30px;
+        margin-right:190px;
+    }
+    .banner{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    
+
+}
