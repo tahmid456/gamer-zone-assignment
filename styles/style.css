@@ -36,7 +36,8 @@ align-items: center;
 
     width:150px;
     background-color: lightgray;
-    padding:4px;
+    padding:14px;
+    margin-bottom: 14px;
     
 }
 
@@ -44,6 +45,7 @@ nav{
 
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+    margin-bottom: 15px;
 
 }
 
@@ -124,27 +126,18 @@ nav{
 .games-photo{
 
     display: flex;
+    gap:20px;
     justify-content: center;
+    
     margin-top: 40px;
    
 }
-.rect-5, .rect-7 {
 
-margin-right: 40px;
-
-}
-.rect-7{
-
-    margin-left: 15px;
-}
-.rect-5{
-    margin-left: 25px;
-}
 
 .games-photo img{
 
-    width:200px;
-    height:200px;
+    width:300px;
+    height:300px;
 }
 
 .games-desc{
@@ -207,66 +200,80 @@ height:240px;
     padding: 20px;
     gap: 20px;
 }
-.name-five, .name-four, .action, .adventure, .arcade, .educational, .word, .role, .music, .puzzle, .strategy{
+ .action, .adventure, .arcade, .educational, .word, .role, .music, .puzzle, .strategy{
 
 display: flex;
 
 justify-content:space-evenly;
 
 }
+
+.games-name-container{
+
+display: grid;
+grid-template-columns: repeat(5,1fr);
+justify-content: center;
+
+
+}
+button{
+
+    border:none;
+    border-radius: 55px;
+}
 .action:hover{
 border-radius: 50px;
     border:2px solid gray;
-    background-color: blue;
+    color: blue;
     cursor:pointer
 }
 .adventure:hover{
 border-radius: 50px;
     border:2px solid gray;
-    background-color: green;
+    color: green;
     cursor:pointer;
 }
 .arcade:hover{
 border-radius: 50px;
     border:2px solid red;
     cursor:pointer;
-    background-color: aqua;
+    color:blue;
 }
 .educational:hover{
 cursor:pointer;
 border-radius: 50px;
     border:2px solid orange;
-    background-color: brown;
+    color:violet;
 }
 .word:hover{
 border-radius: 50px;
     border:2px solid green;
-    background:tomato;
+color:tomato;
     cursor:pointer;
 }
 .role:hover{
 border-radius: 50px;
     border:2px solid aqua;
-    background-color: crimson;
+    color: crimson;
     cursor:pointer;
 }
 .music:hover{
 border-radius: 50px;
     border:2px solid tomato;
-    background-color: violet;
+    color: violet;
     cursor: pointer;
 }
 .puzzle:hover{
 border-radius: 50px;
     border:2px solid brown;
-    background-color: darkblue;
+    color: violet;
     cursor: pointer;
 }
 .strategy:hover{
 cursor: pointer;
 border-radius: 50px;
     border:2px solid magenta;
-    background-color: yellow;
+    color:violet;
 }
 
 
@@ -292,7 +299,7 @@ li{
 
 .footer-icon{
 
-font-size: 2rem;
+font-size: 3rem;
 margin-top: 30px;
     display: flex;
     justify-content: center;
@@ -323,12 +330,37 @@ margin-top: 45px;
 .video-icon{
 
 position: relative;
-bottom: 100px;
+bottom: 280px;
 
+}
+.icon-video{
+
+
+font-size: 4rem;
+color: #FFF;
+}
+.video-title{
+
+    color:pink;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+button{
+
+    cursor: pointer;
 }
 
 @media screen and (min-width:425px) and (max-width:767px) {
 
+
+    .video-icon{
+
+        position: relative;
+        bottom: 280px;
+        margin-bottom: -240px;
+        
+        }
 .nav-content,nav, .banner {
 
 
@@ -349,12 +381,10 @@ display: flex;
 .games-photo{
 
 flex-direction: column;
+gap: 20px;
 
 }
-.rect-6{
 
-    margin-right: 22px;
-}
 
 .playing-container{
 
@@ -367,12 +397,26 @@ flex-direction: column;
     position: relative;
     left:200px;
 }
-.games-name-container,.name-five, .name-four, .footer-logo, .footer-item{
 
-    flex-direction: column;
-    
+.games-name-container{
+
+display: grid;
+justify-content: center;
+grid-template-columns: repeat(3,1fr);
+
 }
+.footer-item,.footer-icon{
 
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3,1fr);
+}
+ .footer-policies{
+
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2,1fr);
+}
 
 
 }
@@ -380,6 +424,15 @@ flex-direction: column;
 
 @media screen and (min-width:768px) and (max-width:1023px){
 
+
+
+    .video-icon{
+
+        position: relative;
+        bottom: 280px;
+        margin-bottom: -240px;
+        
+        }
     .nav-content,nav, .banner {
 
 
@@ -418,7 +471,7 @@ flex-direction: column;
         position: relative;
         left:200px;
     }
-    .games-name-container,.name-five, .name-four, .footer-logo, .footer-item{
+    .games-name-container, .footer-logo, .footer-item{
     
         flex-direction: column;
         
